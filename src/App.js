@@ -1,7 +1,10 @@
+import Nav from "./components/Nav";
+import GlobalStyle from "./styles/GlobalStyles";
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <GlobalStyle />
+      <Nav />
     </div>
   );
 }
