@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import me from "../me.jpeg";
 
 const About = () => {
   return (
     <div>
-      <PictureDiv>
-        <ProfilePicture alt="" src={me} />
-      </PictureDiv>
       <Title>About me</Title>
 
       <Container>
@@ -50,13 +46,4 @@ const Container = styled.div`
   }
 `;
 
-const ProfilePicture = styled.img`
-  margin-top: 100px;
-  border-radius: 50%;
-`;
-
-const PictureDiv = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 export default About;
