@@ -1,5 +1,14 @@
+import me from "../me.jpeg";
+
 const Projects = () => {
-  return <h1>working</h1>;
+  return (
+    <>
+      <div>
+        <img src={me} alt="" />
+      </div>
+      <div></div>
+    </>
+  );
 };
 
 export default Projects;

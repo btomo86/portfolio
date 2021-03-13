@@ -60,6 +60,7 @@ const StyledNav = styled.nav`
   z-index: 10;
   top: 0;
   border-bottom: 1px solid #77d0d8;
+  font-family: "Lobster", cursive;
 
   a {
     color: #77d0d8;

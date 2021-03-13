@@ -28,8 +28,14 @@ p {
         color: #77d0d8;
         font-size: 1.4rem;
         line-height: 150%;
+        font-family: 'Lato', sans-serif;
   
 
+    }
+    
+    h1,h2,h3,h4 {
+        color: #77d0d8;
+        font-family: 'Fascinate', cursive;
     }
 
 

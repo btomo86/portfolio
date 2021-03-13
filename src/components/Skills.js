@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { FaReact, FaCss3Alt, FaSass, FaNodeJs, FaNpm } from "react-icons/fa";
 import { SiJavascript, SiPostgresql, SiVisualstudio } from "react-icons/si";
-import { DiHtml5, DiGit } from "react-icons/di";
+import { DiHtml5, DiGit, DiTerminal } from "react-icons/di";
 import { AiFillGithub } from "react-icons/ai";
-import { GrCli } from "react-icons/gr";
 
 const Skills = () => {
   return (
@@ -18,7 +17,7 @@ const Skills = () => {
         <span>JavaScript</span>
       </SkillDiv>
       <SkillDiv>
-        <FaCss3Alt size="3x" />
+        <FaCss3Alt size="2x" />
         <span>CSS</span>
       </SkillDiv>
       <SkillDiv>
@@ -50,11 +49,11 @@ const Skills = () => {
         <span>Git</span>
       </SkillDiv>
       <SkillDiv>
-        <GrCli size="2x" />
+        <DiTerminal size="2x" />
         <span>CLI</span>
       </SkillDiv>
       <SkillDiv>
-        <SiVisualstudio size="x2" />
+        <SiVisualstudio size="2x" />
         <span>Vs code</span>
       </SkillDiv>
     </SkillContainer>
@@ -68,14 +67,23 @@ const SkillContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: 20px;
-  width: 500px;
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
 `;
 
 const SkillDiv = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,5 +92,9 @@ const SkillDiv = styled.div`
   color: #77d0d8;
   p {
     font-size: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 80px;
+    width: 80px;
   }
 `;
