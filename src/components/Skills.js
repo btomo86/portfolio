@@ -6,57 +6,60 @@ import { AiFillGithub } from "react-icons/ai";
 
 const Skills = () => {
   return (
-    <SkillContainer>
-      <SkillDiv>
-        <FaReact size="2x" />
-        <span>React</span>
-      </SkillDiv>
+    <>
+      <h2>My Skills</h2>
+      <SkillContainer>
+        <SkillDiv>
+          <FaReact size="2x" />
+          <span>React</span>
+        </SkillDiv>
 
-      <SkillDiv>
-        <SiJavascript size="2x" />
-        <span>JavaScript</span>
-      </SkillDiv>
-      <SkillDiv>
-        <FaCss3Alt size="2x" />
-        <span>CSS</span>
-      </SkillDiv>
-      <SkillDiv>
-        <DiHtml5 size="2x" />
-        <span>HTML</span>
-      </SkillDiv>
-      <SkillDiv>
-        <FaSass size="2x" />
-        <span>Sass</span>
-      </SkillDiv>
-      <SkillDiv>
-        <FaNodeJs size="2x" />
-        <span>Node.js</span>
-      </SkillDiv>
-      <SkillDiv>
-        <FaNpm size="2x" />
-        <span>NPM</span>
-      </SkillDiv>
-      <SkillDiv>
-        <SiPostgresql size="2x" />
-        <span>PostgreSQL</span>
-      </SkillDiv>
-      <SkillDiv>
-        <AiFillGithub size="2x" />
-        <span>Github</span>
-      </SkillDiv>
-      <SkillDiv>
-        <DiGit size="2x" />
-        <span>Git</span>
-      </SkillDiv>
-      <SkillDiv>
-        <DiTerminal size="2x" />
-        <span>CLI</span>
-      </SkillDiv>
-      <SkillDiv>
-        <SiVisualstudio size="2x" />
-        <span>Vs code</span>
-      </SkillDiv>
-    </SkillContainer>
+        <SkillDiv>
+          <SiJavascript size="2x" />
+          <span>JavaScript</span>
+        </SkillDiv>
+        <SkillDiv>
+          <FaCss3Alt size="2x" />
+          <span>CSS</span>
+        </SkillDiv>
+        <SkillDiv>
+          <DiHtml5 size="2x" />
+          <span>HTML</span>
+        </SkillDiv>
+        <SkillDiv>
+          <FaSass size="2x" />
+          <span>Sass</span>
+        </SkillDiv>
+        <SkillDiv>
+          <FaNodeJs size="2x" />
+          <span>Node.js</span>
+        </SkillDiv>
+        <SkillDiv>
+          <FaNpm size="2x" />
+          <span>NPM</span>
+        </SkillDiv>
+        <SkillDiv>
+          <SiPostgresql size="2x" />
+          <span>PostgreSQL</span>
+        </SkillDiv>
+        <SkillDiv>
+          <AiFillGithub size="2x" />
+          <span>Github</span>
+        </SkillDiv>
+        <SkillDiv>
+          <DiGit size="2x" />
+          <span>Git</span>
+        </SkillDiv>
+        <SkillDiv>
+          <DiTerminal size="2x" />
+          <span>CLI</span>
+        </SkillDiv>
+        <SkillDiv>
+          <SiVisualstudio size="2x" />
+          <span>Vs code</span>
+        </SkillDiv>
+      </SkillContainer>
+    </>
   );
 };
 

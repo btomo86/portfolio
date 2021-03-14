@@ -27,12 +27,20 @@ const Projects = () => {
         </InnerRowContainer>
         <InnerRowContainer>
           <Button>
-            <a href="https://spoondr.herokuapp.com/">
+            <a
+              href="https://cookbook-one.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GrPersonalComputer /> Live Site
             </a>
           </Button>
           <Button>
-            <a href="https://github.com/btomo86/cookbook">
+            <a
+              href="https://github.com/btomo86/cookbook"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub /> Git Hub
             </a>
           </Button>
@@ -62,6 +70,14 @@ const ProjectContainer = styled.div`
     font-size: 30px;
     margin-top: 0;
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
   }
 `;
 

@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
