@@ -9,7 +9,7 @@ import { DiMongodb, DiGit, DiTerminal } from "react-icons/di";
 const Projects = () => {
   return (
     <ProjectContainer>
-      <img alt="" src={cookbook} width="600px" />
+      <ProjectImage> alt="" src={cookbook} </ProjectImage>
       <HeaderContainer>
         <h3>Cook Book</h3>
         <h4>Group Project | 2 weeks</h4>
@@ -55,7 +55,7 @@ const ProjectContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* margin: 5px 0 5px 0; */
+
   margin: auto;
 
   height: 600px;
@@ -72,12 +72,12 @@ const ProjectContainer = styled.div`
     font-weight: 300;
   }
 
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
+  @media (max-width: 736px) {
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 300px;
   }
 `;
 
@@ -132,6 +132,11 @@ const IconContainer = styled.div`
   width: 400px;
 
   align-content: center;
+`;
+
+const ProjectImage = styled.image`
+  display: flex;
+  justify-content: center;
 `;
 
 export default Projects;

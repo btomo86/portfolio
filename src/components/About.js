@@ -19,6 +19,9 @@ const About = () => {
           saepe, doloribus perferendis. Eaque quae corrupti est ab.
         </Paragraph>
       </Container>
+      <div>
+        <h1>My Skills</h1>
+      </div>
     </div>
   );
 };
@@ -38,14 +41,14 @@ const Paragraph = styled.p`
 `;
 
 const Container = styled.div`
-  width: 800px;
+  width: 100%;
   height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  @media only screen and (max-width: 400px) {
-    max-width: 300px;
+  @media only screen and (max-width: 736px) {
+    max-width: 400px;
   }
 `;
 
