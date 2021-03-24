@@ -80,6 +80,11 @@ const ImageContainer = styled.image`
     border-radius: 50%;
     border: 5px solid #272133;
     box-shadow: 0 10px 50px #77d0d8;
+    @media (width: 667px) {
+      img {
+        height: 100px;
+      }
+    }
   }
 `;
 

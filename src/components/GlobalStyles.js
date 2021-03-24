@@ -13,11 +13,11 @@ html {
     }
 }
 
-/* html { font-size: calc(1em + 1vw) } */
+
 
 
 body {
-    /* background: linear-gradient(to right, #43cea2, #185a9d);*/
+   
     background: linear-gradient(to right, #606c88, #3f4c6b);
     font-family: 'inter', sans-serif;
     overflow-x: hidden;

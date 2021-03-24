@@ -103,8 +103,9 @@ const Title = styled.h1`
 
 const Paragraph = styled.p`
   display: flex;
-  width: 70%;
-
+  width: 80%;
+  padding: 0;
+  margin-bottom: 100px;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;

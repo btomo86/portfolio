@@ -14,7 +14,7 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/about" exact>
+          <Route path="/" exact>
             <About />
           </Route>
 
