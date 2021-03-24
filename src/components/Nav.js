@@ -6,7 +6,7 @@ const Nav = () => {
   const { pathname } = useLocation();
   return (
     <StyledNav>
-      <Link id="#logo" to="/about">
+      <Link id="#logo" to="/">
         northernCod3r
       </Link>
       <ul>
