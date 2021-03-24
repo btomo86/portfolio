@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { useForm, ValidationError } from "@formspree/react";
 import { RiMailSendLine } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../components/Animation";
 
 const Projects = () => {
   const [state, handleSubmit] = useForm("xzbknjlq");
@@ -11,7 +13,12 @@ const Projects = () => {
     return <p>Thanks for your message. I will respond as soon as I can</p>;
   }
   return (
-    <>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <ImageContainer>
         <img src={me} alt="" />
       </ImageContainer>
@@ -59,7 +66,7 @@ const Projects = () => {
           </Button>
         </ContactForm>
       </ContactFormContainer>
-    </>
+    </motion.div>
   );
 };
 
@@ -71,6 +78,8 @@ const ImageContainer = styled.image`
   margin-top: 50px;
   img {
     border-radius: 50%;
+    border: 5px solid #272133;
+    box-shadow: 0 10px 50px #77d0d8;
   }
 `;
 
@@ -93,6 +102,27 @@ const SocialContainer = styled.div`
     font-size: 60px;
     color: #b4aee8;
   }
+
+  @media (max-width: 667px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 350px;
+    margin: auto;
+    border-top: 5px solid #77d0d8;
+    border-bottom: 5px solid #77d0d8;
+    padding: 10px 0px;
+    margin-top: 40px;
+    font-size: 30px;
+    a {
+      text-decoration: none;
+      color: #77d0d8;
+    }
+    a:hover {
+      font-size: 40px;
+      color: #b4aee8;
+    }
+  } ;
 `;
 
 const ContactFormContainer = styled.div`
@@ -116,10 +146,17 @@ const ContactForm = styled.form`
   justify-content: center;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 10px 50px #77d0d8;
   background: linear-gradient(to right, #606c88, #3f4c6b);
   margin-top: 20px;
   h2 {
     font-size: 30px;
+  }
+  @media (max-width: 667px) {
+    width: 300px;
+  }
+  h2 {
+    font-size: 20px;
   }
 `;
 
@@ -164,6 +201,11 @@ const Button = styled.button`
   &:hover {
     background: #b4aee8;
     color: white;
+  }
+  @media (max-width: 667px) {
+    height: 40px;
+    font-weight: 100;
+    font-size: 18px;
   }
 `;
 

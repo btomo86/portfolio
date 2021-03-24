@@ -6,7 +6,7 @@ const Nav = () => {
   const { pathname } = useLocation();
   return (
     <StyledNav>
-      <Link id="#logo" to="/">
+      <Link id="#logo" to="/about">
         northernCod3r
       </Link>
       <ul>
@@ -18,14 +18,7 @@ const Nav = () => {
             animate={{ width: pathname === "/about" ? "50%" : "0%" }}
           />
         </li>
-        <li>
-          <Link to="/skills">Skills</Link>
-          <Line
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/skills" ? "50%" : "0%" }}
-          />
-        </li>
+
         <li>
           <Link to="/projects">Projects</Link>
           <Line
