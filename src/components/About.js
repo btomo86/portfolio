@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../components/Animation";
-
+import { pageAnimation, titleAnim } from "../components/Animation";
+import { GrMysql } from "react-icons/gr";
 import { FaReact, FaCss3Alt, FaSass, FaNodeJs, FaNpm } from "react-icons/fa";
-import { SiJavascript, SiPostgresql, SiVisualstudio } from "react-icons/si";
-import { DiHtml5, DiGit, DiTerminal } from "react-icons/di";
+import {
+  SiJavascript,
+  SiPostgresql,
+  SiVisualstudio,
+  SiMicrosoftsqlserver,
+  SiDocker,
+} from "react-icons/si";
+import { DiHtml5, DiGit, DiTerminal, DiMongodb } from "react-icons/di";
 import { AiFillGithub } from "react-icons/ai";
 
 const About = () => {
@@ -15,7 +21,7 @@ const About = () => {
       initial="hidden"
       animate="show"
     >
-      <Title>About me</Title>
+      <Title variants={titleAnim}>About me</Title>
 
       <Container>
         <Paragraph>
@@ -30,13 +36,14 @@ const About = () => {
             and visual aspects of Front End and would like the opportunity to
             further develop my skills and learn more about backend development.
             When I am not developing my skills, I can be found spending time
-            with family often in nature exploring and when I'm able to get, out
-            on the slopes on my snowboard.
+            with family often in nature exploring and sharing my passion for
+            travel with my two boys. I am at my happiest when strapped to a
+            snowboard throwing myself down a mountain.
           </p>
         </Paragraph>
       </Container>
       <div>
-        <Title>My Skills</Title>
+        <Title variants={titleAnim}>My Skills</Title>
       </div>
 
       <SkillContainer>
@@ -89,26 +96,46 @@ const About = () => {
           <SiVisualstudio size="2x" />
           <span>Vs code</span>
         </SkillDiv>
+        <SkillDiv>
+          <DiMongodb size="2x" />
+          <span>MongoDB</span>
+        </SkillDiv>
+        <SkillDiv>
+          <SiMicrosoftsqlserver size="2x" />
+          <span>SQL</span>
+        </SkillDiv>
+        <SkillDiv>
+          <GrMysql size="2x" />
+          <span>MYSQL</span>
+        </SkillDiv>
+        <SkillDiv>
+          <SiDocker size="2x" />
+          <span>Docker</span>
+        </SkillDiv>
       </SkillContainer>
     </motion.div>
   );
 };
 
-const Title = styled.h1`
+const Title = styled(motion.h1)`
   color: #77d0d8;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
   font-size: 3rem;
+  padding-bottom: 1rem;
+
+  /* background-color: blue; */
 `;
 
 const Paragraph = styled.p`
   display: flex;
   width: 80%;
   padding: 0;
-  margin-bottom: 100px;
+  margin: auto;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  /* background-color: red; */
 `;
 
 const Container = styled.div`
@@ -118,6 +145,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
+  /* background-color: yellow; */
   @media only screen and (max-width: 736px) {
     max-width: 400px;
   }
@@ -132,7 +160,8 @@ const SkillContainer = styled.div`
   font-size: 20px;
   width: 600px;
   margin: auto;
-  margin-top: 50px;
+  margin-bottom: 250px;
+  /* background: pink; */
 
   @media (max-width: 667px) {
     flex-direction: row;

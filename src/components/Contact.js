@@ -74,17 +74,13 @@ const ImageContainer = styled.image`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 300px;
+  height: 250px;
   margin-top: 50px;
+
   img {
     border-radius: 50%;
     border: 5px solid #272133;
     box-shadow: 0 10px 50px #77d0d8;
-    @media (width: 667px) {
-      img {
-        height: 100px;
-      }
-    }
   }
 `;
 

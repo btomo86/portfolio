@@ -11,7 +11,7 @@ const Nav = () => {
       </Link>
       <ul>
         <li>
-          <Link to="/about">About Me</Link>
+          <Link to="/">About Me</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}

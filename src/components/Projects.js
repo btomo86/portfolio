@@ -1,13 +1,13 @@
 import cookbook from "../cookbook.png";
 import styled from "styled-components";
-import { FaReact, FaCss3Alt } from "react-icons/fa";
+import { FaReact, FaCss3Alt, FaSass } from "react-icons/fa";
 import { GrPersonalComputer } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
 import { SiJavascript, SiStyledComponents } from "react-icons/si";
 import { DiMongodb, DiGit } from "react-icons/di";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../components/Animation";
-
+import music from "../music.png";
 import weather from "../weather.png";
 import nasa from "../nasa.png";
 
@@ -30,11 +30,12 @@ const Projects = () => {
           </IconContainer>
           <InnerRowContainer>
             <p>
-              Cook Book is a recipe app where users can store recipes Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Numquam optio
-              deserunt eos, obcaecati illo voluptates quidem inventore enim
-              magni dolor labore voluptatibus eligendi animi ea eum nihil
-              distinctio maiores quos?
+              Cook Book is a final project built by myself and Billy who is a
+              fellow Manchester codes student. The Cook Books minimum viable
+              product was that a user could add a recipe, view your own recipes
+              and also view other user's recipes. For budding chefs it makes it
+              easier to save and have access to recipes all in one place for
+              quick meal ideas.
             </p>
           </InnerRowContainer>
           <InnerRowContainer>
@@ -65,7 +66,8 @@ const Projects = () => {
           <h3>Weather App</h3>
           <h4>Manchester Codes Project | 2 weeks</h4>
           <IconContainer>
-            <FaReact /> <SiJavascript /> <FaCss3Alt />
+            <FaReact /> <SiJavascript /> <FaCss3Alt /> <DiGit />
+            <AiFillGithub />
           </IconContainer>
           <InnerRowContainer>
             <p>
@@ -128,6 +130,45 @@ const Projects = () => {
             <Button>
               <a
                 href="https://github.com/btomo86/tech-test"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub /> Git Hub
+              </a>
+            </Button>
+          </InnerRowContainer>
+        </HeaderContainer>
+      </ProjectContainer>
+      <ProjectContainer>
+        <img alt="" src={music} height="500px" />
+        <HeaderContainer>
+          <h3>Waves Music App</h3>
+          <h4>React Tutorial course</h4>
+          <IconContainer>
+            <FaReact /> <SiJavascript /> <FaSass />
+            <DiGit /> <AiFillGithub />
+          </IconContainer>
+          <InnerRowContainer>
+            <p>
+              Waves Music App is a project I built while doing the React course
+              by Dev Ed to further to develop my knowledge in React. Using the
+              chillhop API we can request music and cover photos for free. The
+              app can play music, skip and pause. Styling is done using Sass.
+            </p>
+          </InnerRowContainer>
+          <InnerRowContainer>
+            <Button>
+              <a
+                href="https://react-music-player-omega.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GrPersonalComputer /> Live Site
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://github.com/btomo86/react-music-player"
                 target="_blank"
                 rel="noreferrer"
               >
