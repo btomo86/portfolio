@@ -120,7 +120,7 @@ const Projects = () => {
           <InnerRowContainer>
             <Button>
               <a
-                href="https://cookbook-one.vercel.app/"
+                href="https://tech-test-jbdt4g5g2-btomo86.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
